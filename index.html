@@ -2,6 +2,7 @@
     <head>
         <title>HTML Form 2</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/f398ab4635.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
@@ -22,23 +23,66 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <label for="InputCard" class="my-2">Card #</label>
+                                        <input type="text" class="form-control" id="InputCard" placeholder="XXXXXXXXXXXXXXXX">
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <label for="InputCVC" class="my-2">CVC #</label>
+                                        <input type="text" class="form-control" id="InputCVC" placeholder="0000">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <label for="InputAmount" class="my-2">Amount</label>
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-dollar-sign mt-3 me-1"></i>
+                                            <input type="text" class="form-control" id="InputAmount" placeholder="Amount">
+                                        </div>
                                       </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="FirstName" class="my-2">First Name</label>
+                                        <input type="text" class="form-control" id="FirstName">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="LastName" class="my-2">Last Name</label>
+                                        <input type="text" class="form-control" id="LastName">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="City" class="my-2">City</label>
+                                        <input type="text" class="form-control" id="City">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="stateSelect" class="form-label my-2">State</label>
+                                        <select class="form-select" id="stateSelect" aria-label="State select">
+                                        <option selected>Pick a state</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="PostalCode" class="my-2">Postal Code</label>
+                                        <input type="text" class="form-control" id="PostalCode">
+                                    </div>
                                 </div>
                             </div>
                         </form>
